@@ -43,3 +43,7 @@ st.markdown("""
 # Main Content
 st.title("🏆 Welcome to the Deep Learning Models App")
 st.write("Use the sidebar to navigate between **LSTM** and **GRU** models.")
+show_sidebar = True  # Change this dynamically if needed
+if show_sidebar:
+    st.sidebar.title("Sidebar Content")
+
