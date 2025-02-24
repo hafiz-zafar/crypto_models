@@ -172,8 +172,7 @@ interval_options = {
     "Hourly": "1h", 
     "4 Hours": "4h",  # Added 4h timeframe
     "Daily": "1d", 
-    "Weekly": "1w", 
-    "Monthly": "1M"
+    "Weekly": "1w"
 }
 timeframe = st.selectbox("Select Timeframe", list(interval_options.keys()))
 interval = interval_options[timeframe]
