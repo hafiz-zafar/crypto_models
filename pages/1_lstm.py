@@ -56,7 +56,7 @@ st.markdown("""
 # Function to fetch cryptocurrency data
 def fetch_crypto_data(symbol, interval):
     try:
-        url = f"https://api.binance.com/api/v3/klines?symbol={symbol}USDT&interval={interval}&limit=100"
+        url = f"https://data.binance.com/api/v3/klines?symbol={symbol}USDT&interval={interval}&limit=100"
         response = requests.get(url)
         data = response.json()
         prices = [float(entry[4]) for entry in data]  # Closing prices
